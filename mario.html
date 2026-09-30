@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mario Runner</title>
+    <style>
+        body {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+        canvas {
+            background-color: #5c94fc; /* Mario Sky Blue */
+            border: 5px solid #ecf0f1;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-btn">⬅ Back to Menu</a>
+    
+    <canvas id="marioCanvas" width="600" height="400"></canvas>
+
+    <script src="mario.js"></script>
+
+</body>
+</html>

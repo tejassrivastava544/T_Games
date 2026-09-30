@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Invaders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+        body {
+            background-color: #0b0e14;
+            color: #ffffff;
+            text-align: center;
+            font-family: monospace, sans-serif;
+            margin: 0;
+            padding: 15px 10px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: #2e3846;
+            color: #00ffcc;
+            padding: 8px 18px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            border: 1px solid #00ffcc;
+        }
+        canvas {
+            background-color: #000000;
+            border: 3px solid #00ffcc;
+            border-radius: 6px;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        /* Mobile Touch Controls */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 14px;
+        }
+        .ctrl-btn {
+            background-color: #1a2332;
+            color: #ffffff;
+            border: 2px solid #00ffcc;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 14px 24px;
+            touch-action: manipulation;
+        }
+        .ctrl-btn:active {
+            background-color: #00ffcc;
+            color: #000000;
+        }
+        .fire-btn {
+            background-color: #e74c3c;
+            border-color: #ff7675;
+            color: white;
+            padding: 14px 32px;
+        }
+        .fire-btn:active {
+            background-color: #ff7675;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-btn">⬅ Back to Menu</a>
+
+    <canvas id="invaderCanvas" width="480" height="520"></canvas>
+
+    <div class="controls">
+        <button class="ctrl-btn" id="btnLeft">◀</button>
+        <button class="ctrl-btn fire-btn" id="btnFire">FIRE</button>
+        <button class="ctrl-btn" id="btnRight">▶</button>
+    </div>
+
+    <script src="invaders.js"></script>
+</body>
+</html>
